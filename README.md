@@ -68,6 +68,22 @@ use  Somenamespace\nameOfSubNamespace1;
 
 -possibility of adding several namespaces in one file (though, not receommended for clarity sake)
 
- 
+-new \Exception() - searching in global namespace
+-new Exception() - searching in local namespace first
+
+```php
+<?php
+namespace Localnamespace;
+
+class App {
+     function run() {
+          throw new \Exception("Message of execption"); //searching in global namespace
+          throw new Exception("Message of execption");  // searching in 'Localnamespace';
+     }
+}
+```
+
+## Interfaces
+- coding 'to interfaces' is to have interfaces as dependencies (meaning various object of classes, which implement this interface). Gives more flexibility as to, which object can be used in, for example, given method argument. 
 
 
