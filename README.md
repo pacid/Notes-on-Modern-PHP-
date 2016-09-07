@@ -86,4 +86,6 @@ class App {
 ## Interfaces
 - coding 'to interfaces' is to have interfaces as dependencies (meaning various object of classes, which implement this interface). Gives more flexibility as to, which object can be used in, for example, given method argument. 
 
+## Traits
+- enable to wrap some common functionalities (i.e. functions) and add them to classes. Use in situation 
 
